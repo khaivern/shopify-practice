@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "kv-test"
+client_id = "f25b89d5efc02413ac562d0492a3b73e"
+application_url = "https://occasion-parking-occasions-vacancies.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://occasion-parking-occasions-vacancies.trycloudflare.com/auth/callback",
+  "https://occasion-parking-occasions-vacancies.trycloudflare.com/auth/shopify/callback",
+  "https://occasion-parking-occasions-vacancies.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "kv-development-store.myshopify.com"
